@@ -1,12 +1,22 @@
 export const QuizTextarea = {
   template: `<div >
-          <textarea class="textarea-question" @change="onChange"></textarea>
+          <textarea class="textarea-question" :value="myValue" @input="onChange"></textarea>
         </div>`,
   name: "QuizTextarea",
-  props: ["selectItem"],
+  emit: ["selectItem"],
+  props: {
+    value: {
+      type: String,
+    },
+  },
+  computed: {
+    myValue() {
+      return this.$props.value[0];
+    },
+  },
   methods: {
-    onChange() {
-      this.$emit("selectItem", "add", this.value);
+    onChange($event) {
+      this.$emit("selectItem", "add", $event.target.value.trim());
     },
   },
 };

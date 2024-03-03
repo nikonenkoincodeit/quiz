@@ -35,7 +35,7 @@ export const QuizNavbar = {
       return this.$props.step === 1;
     },
     isDisabledNext() {
-      return !this.$props.value.length;
+      return !this.$props.value[0];
     },
   },
 };
