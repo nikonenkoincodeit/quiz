@@ -31,7 +31,7 @@ body {
   box-sizing: border-box;
   padding-bottom: 0;
   width: 100vw;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 40px);
   background: #fff;
   gap: 10px;
   display: flex;
@@ -168,11 +168,14 @@ body {
 }
 
 .toggle-sidebar {
-  display: flex;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
   transition: transform 0.2s ease-in-out;
+}
+
+svg {
+  tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
 }
 
 .quiz-sidebar.show .toggle-sidebar {
@@ -191,6 +194,7 @@ body {
   display: grid;
   gap: 10px;
   grid-template-columns: 50px 1fr 40px;
+  align-items: center;
 }
 
 .assistant-avatar {
@@ -859,7 +863,7 @@ body {
   .quiz-modal .quiz-sidebar {
     margin: 0;
     min-height: 100%;
-    border-top-left-radius: 0;
+    border-radius: 0;
   }
   .quiz-title {
     font-size: 28px;
