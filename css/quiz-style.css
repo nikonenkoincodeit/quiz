@@ -444,7 +444,7 @@ svg {
 }
 
 .gallery {
-  padding-top: 2px;
+  padding: 2px 0;
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
