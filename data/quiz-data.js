@@ -1,3 +1,245 @@
+export const quizShowerRoom = [
+  {
+    id: 1,
+    title: "Какой формы нужна душевая?",
+    type: "gallery-radio",
+    prev: null,
+    next: 2,
+    value: [],
+    percent: 0,
+    questions: [
+      {
+        id: 1,
+        text: "Угловая",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/qkwl9bpqnjnlty0whylo.webp",
+      },
+      {
+        id: 2,
+        text: "Трапеция ( углы 135°)",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/higkvavzmvfhbgpmleyv.webp",
+      },
+      {
+        id: 3,
+        text: "П-образная",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/aofxe4fmjnag3vb5rfhu.webp",
+      },
+      {
+        id: 4,
+        text: "В нишу",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/af9k0ujrrhckrqhmhoxq.webp",
+      },
+      {
+        id: 5,
+        text: "Перегородка",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/xgda3c4vbyyeigniqvjl.webp",
+      },
+      {
+        id: 6,
+        text: "Шторка в ванную",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/bsu85kulh3vnibauhnzz.webp",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Знаете, какой вид стекла хотите?",
+    type: "gallery",
+    prev: 1,
+    next: 3,
+    value: [],
+    percent: 20,
+    questions: [
+      {
+        id: 1,
+        text: "Обычное стекло (Зеленоватый оттенок)",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/c7dt5djs02tggknk4aya.webp",
+      },
+      {
+        id: 2,
+        text: "Осветленное Диамант ( слегка голубоватый оттенок)",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/pfq8ipvtpryv5chmjyrq.webp",
+      },
+      {
+        id: 3,
+        text: "Матовое",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/kzv86x4mni8ozqytd2n4.webp",
+      },
+      {
+        id: 4,
+        text: "С пескоструем",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/eqpqbtqlysnnzrbfkdri.webp",
+      },
+      {
+        id: 5,
+        text: "С цветным рисунком",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/z0bt2s3yv43ir6qtdwlu.webp",
+      },
+      {
+        id: 6,
+        text: "С тонированным стеклом",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/l09noekfytcb9nu4ioxu.webp",
+      },
+      {
+        id: 7,
+        text: "Еще не знаю",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/grey.jpg",
+      },
+    ],
+    assistant: {
+      avatar: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+      name: "Дарья",
+      specialty: "Специалист по душевым",
+      text: "Душевая может быть главным объектом внимания в ванной комнате, если стильно ее оформить.",
+    },
+  },
+  {
+    id: 3,
+    title: "У вас есть параметры размеров своей душевой?",
+    type: "radio",
+    prev: 2,
+    value: [],
+    percent: 40,
+    questions: [
+      {
+        id: 1,
+        text: "Да",
+        next: 4,
+      },
+      {
+        id: 2,
+        text: "Нет",
+        next: 4.1,
+      },
+      {
+        id: 3,
+        text: "Нужна консультация- помощь",
+        next: 4.2,
+      },
+    ],
+  },
+  {
+    id: 4,
+    prev: 3,
+    next: 5,
+    value: [],
+    percent: 55,
+    type: "my-textarea",
+    title: "Впишите размеры Душевой ниже",
+  },
+  {
+    id: 4.1,
+    prev: 3,
+    next: 6.1,
+    value: [],
+    percent: 60,
+    type: "my-textarea",
+    title:
+      "Если есть, пишите тут комментарий или, уточнения, пожелания, ссылку на картинку",
+    assistant: {
+      avatar: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+      name: "Дарья",
+      specialty: "Специалист по душевым",
+      text: "Например, особые пожелания или примечания. Можете также написать, что для Вас может быть важнее всего в процессе исполнения заказа.",
+    },
+  },
+  {
+    id: 4.2,
+    prev: 3,
+    next: 6.2,
+    value: [],
+    percent: 60,
+    type: "my-textarea",
+    title:
+      "Если есть, пишите тут комментарий или, уточнения, пожелания, ссылку на картинку",
+    assistant: {
+      avatar: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+      name: "Дарья",
+      specialty: "Специалист по душевым",
+      text: "Например, особые пожелания или примечания. Можете также написать, что для Вас может быть важнее всего в процессе исполнения заказа.",
+    },
+  },
+  {
+    id: 5,
+    prev: 4,
+    next: 6,
+    value: [],
+    percent: 70,
+    type: "my-textarea",
+    title:
+      "Если есть, пишите тут комментарий или, уточнения, пожелания, ссылку на картинку",
+    assistant: {
+      avatar: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+      name: "Дарья",
+      specialty: "Специалист по душевым",
+      text: "Например, особые пожелания или примечания. Можете также написать, что для Вас может быть важнее всего в процессе исполнения заказа.",
+    },
+  },
+  {
+    id: 6,
+    prev: 5,
+    next: 7,
+    percent: 85,
+    type: "radio",
+    value: [],
+    buttonText: "Последний шаг",
+    title: "Для себя или Для клиента?",
+    questions: [
+      {
+        id: 1,
+        text: "Я- Частное лицо, заказываю для себя",
+      },
+      {
+        id: 2,
+        text: "Я- Мебельщик, заказываю для клиента",
+      },
+    ],
+  },
+  {
+    id: 6.1,
+    prev: 4.1,
+    next: 7,
+    percent: 80,
+    type: "radio",
+    value: [],
+    title: "Для себя или Для клиента?",
+    buttonText: "Последний шаг",
+    questions: [
+      {
+        id: 1,
+        text: "Я- Частное лицо, заказываю для себя",
+      },
+      {
+        id: 2,
+        text: "Я- Мебельщик, заказываю для клиента",
+      },
+    ],
+  },
+  {
+    id: 6.2,
+    prev: 4.2,
+    next: 7,
+    percent: 80,
+    type: "radio",
+    value: [],
+    title: "Для себя или Для клиента?",
+    buttonText: "Последний шаг",
+    questions: [
+      {
+        id: 1,
+        text: "Я- Частное лицо, заказываю для себя",
+      },
+      {
+        id: 2,
+        text: "Я- Мебельщик, заказываю для клиента",
+      },
+    ],
+  },
+  {
+    id: 7,
+    type: "choice-of-comm-met",
+  },
+];
+
 export const quizMirrors = [
   {
     id: 1,
@@ -171,6 +413,7 @@ export const quizMirrors = [
     type: "radio",
     value: [],
     title: "Для себя или Для клиента?",
+    buttonText: "Последний шаг",
     questions: [
       {
         id: 1,
@@ -190,6 +433,7 @@ export const quizMirrors = [
     type: "radio",
     value: [],
     title: "Для себя или Для клиента?",
+    buttonText: "Последний шаг",
     questions: [
       {
         id: 1,
@@ -209,6 +453,7 @@ export const quizMirrors = [
     type: "radio",
     value: [],
     title: "Для себя или Для клиента?",
+    buttonText: "Последний шаг",
     questions: [
       {
         id: 1,

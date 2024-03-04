@@ -17,11 +17,10 @@ export const QuizRadio = {
       default: () => [],
     },
   },
-  emit: ["selectItem", "next"],
+  emit: ["selectItem"],
   methods: {
     onClick(id) {
       this.$emit("selectItem", "add", id);
-      this.$emit("next");
     },
   },
 };
