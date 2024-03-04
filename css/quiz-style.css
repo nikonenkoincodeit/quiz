@@ -52,7 +52,7 @@ body {
 .icon-x:active,
 .icon-x:hover,
 .icon-x:focus {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
   border: none;
 }
@@ -172,10 +172,13 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
+div,
+img,
+button,
 svg {
-  tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
-  -ms-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .quiz-sidebar.show .toggle-sidebar {
