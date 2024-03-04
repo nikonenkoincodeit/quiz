@@ -59,7 +59,6 @@ body {
 
 .final-page-body {
   padding: 24px 16px;
-  padding-top: 0;
   max-width: 630px;
   margin: auto;
 }
@@ -841,6 +840,10 @@ svg {
       "title sidebar"
       "content sidebar"
       "navbar sidebar";
+  }
+
+  .final-page-body {
+    padding-top: 0;
   }
 
   .icon-x {
