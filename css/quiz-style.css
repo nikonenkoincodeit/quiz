@@ -30,8 +30,8 @@ body {
   position: relative;
   box-sizing: border-box;
   padding-bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  width: calc(100vw - 10px);
+  height: calc(100vh - 10px);
   background: #fff;
   gap: 10px;
   display: flex;
@@ -52,6 +52,7 @@ body {
 .icon-x:active,
 .icon-x:hover,
 .icon-x:focus {
+  -webkit-tap-highlight-color: transparent;
   outline: none;
   border: none;
 }
