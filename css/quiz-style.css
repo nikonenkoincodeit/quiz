@@ -31,7 +31,7 @@ body {
   box-sizing: border-box;
   padding-bottom: 0;
   width: 100vw;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   background: #fff;
   gap: 10px;
   display: flex;
