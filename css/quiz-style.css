@@ -30,8 +30,8 @@ body {
   position: relative;
   box-sizing: border-box;
   padding-bottom: 0;
-  width: calc(100vw - 10px);
-  height: calc(100vh - 10px);
+  width: 100vw;
+  height: calc(100vh - 50px);
   background: #fff;
   gap: 10px;
   display: flex;
