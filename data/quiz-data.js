@@ -1,7 +1,7 @@
 export const quizShowerRoom = [
   {
     id: 1,
-    title: "Какой формы нужна душевая? 2",
+    title: "Какой формы нужна душевая?",
     type: "gallery-radio",
     prev: null,
     next: 2,

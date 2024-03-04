@@ -31,7 +31,7 @@ body {
   box-sizing: border-box;
   padding-bottom: 0;
   width: 100vw;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 45px);
   background: #fff;
   gap: 10px;
   display: flex;
@@ -41,8 +41,8 @@ body {
 .icon-x {
   position: absolute;
   cursor: pointer;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 15px;
   fill: rgba(54, 54, 54, 0.7);
 }
 
@@ -444,6 +444,7 @@ svg {
 }
 
 .gallery {
+  padding-top: 2px;
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
