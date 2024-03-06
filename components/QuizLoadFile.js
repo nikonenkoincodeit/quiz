@@ -21,7 +21,13 @@ export const QuizLoadFile = {
     </div>
   </div>
 `,
-  props: ["selectItem"],
+  props: {
+    value: {
+      type: Array,
+      default: () => [],
+    },
+  },
+  emit: ["selectItem"],
   data() {
     return {
       fileNames: [],
@@ -66,5 +72,8 @@ export const QuizLoadFile = {
       this.fileNames = this.fileNames.filter((file) => file.id !== id);
       this.$emit("selectItem", "add", this.fileNames);
     },
+  },
+  mounted() {
+    this.fileNames = this.$props.value[0] || [];
   },
 };

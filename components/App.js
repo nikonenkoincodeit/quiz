@@ -1,4 +1,4 @@
-import { quizMirrors, quizShowerRoom } from "../data/quiz-data.js";
+import { quizMirrors, quizShowerRoom, quizSkin } from "../data/quiz-data.js";
 import { QuizSidebar } from "./QuizSidebar.js";
 import { QuizNavbar } from "./QuizNavbar.js";
 import { QuizGallery } from "./QuizGallery.js";
@@ -7,6 +7,8 @@ import { QuizInput } from "./QuizInput.js";
 import { QuizTextarea } from "./QuizTextarea.js";
 import { QuizLoadFile } from "./QuizLoadFile.js";
 import { QuizGalleryRadio } from "./QuizGalleryRadio.js";
+import { QuizCheckbox } from "./QuizCheckbox.js";
+import { QuizInfoBox } from "./QuizInfoBox.js";
 import { QuizFinal } from "./QuizFinal.js";
 
 const app = Vue.createApp({
@@ -25,7 +27,13 @@ const app = Vue.createApp({
         @selectItem="selectItem"
         @next="next"/>
       </div>
-      <QuizNavbar @next="next" @prev="prev" :step="step" :value="slideData?.value" :percent="slideData?.percent" :buttonText="slideData?.buttonText"/>
+      <QuizNavbar 
+      @next="next" 
+      @prev="prev" 
+      :step="step" 
+      :value="slideData?.value" 
+      :percent="slideData?.percent" 
+      :buttonText="slideData?.buttonText"/>
     </div>
 </div>`,
   components: {
@@ -36,12 +44,14 @@ const app = Vue.createApp({
     QuizInput,
     QuizFinal,
     QuizTextarea,
+    QuizCheckbox,
+    QuizInfoBox,
     QuizGalleryRadio,
   },
   data() {
     return {
       step: 1,
-      data: quizShowerRoom,
+      data: quizSkin,
     };
   },
   computed: {
@@ -52,6 +62,8 @@ const app = Vue.createApp({
       if (this.slideData.type === "radio") return QuizRadio;
       if (this.slideData.type === "my-load-file") return QuizLoadFile;
       if (this.slideData.type === "gallery-radio") return QuizGalleryRadio;
+      if (this.slideData.type === "my-checkbox") return QuizCheckbox;
+      if (this.slideData.type === "info-box") return QuizInfoBox;
     },
     isFinish() {
       return this.slideData.type === "choice-of-comm-met";
@@ -70,33 +82,31 @@ const app = Vue.createApp({
         this.slideData.value.push(id);
       } else if (type === "add") {
         this.slideData.value[0] = id;
-        console.log("value ", this.slideData.value);
       } else if (type === "file") {
         this.slideData.value[0] = [...id];
-        console.log("file ", this.slideData.value);
+      } else if (type === "lot") {
+        this.slideData.value = [...id];
       }
+      //
     },
     next() {
-      setTimeout(() => {
-        if (this.slideData?.next) {
-          this.step = this.slideData.next;
-        } else {
-          this.step = this.slideData?.questions?.find(({ id }) =>
-            this.slideData.value.includes(id)
-          )?.next;
-        }
-      }, 500);
+      if (this.slideData?.next) {
+        this.step = this.slideData.next;
+      } else {
+        this.step = this.slideData?.questions?.find(({ id }) =>
+          this.slideData.value.includes(id)
+        )?.next;
+      }
     },
     prev() {
-      setTimeout(() => {
-        this.step = this.slideData.prev;
-      }, 500);
+      this.step = this.slideData.prev;
     },
     onSubmit(obj) {
       const items = [];
+      console.log("data ", this.data);
       Object.values(this.data).forEach((item) => {
         const plainObject = { ...item };
-        if (plainObject.value?.length > 0) {
+        if (plainObject.value?.length > 0 && plainObject.type !== "info-box") {
           items.push(plainObject);
         }
       });

@@ -11,7 +11,7 @@ export const QuizGalleryRadio = {
           <div class="gallery-radio-box-image">
             <img :src="picture" alt="image" v-if="picture"/>
             <div class="gallery-radio-box-image-title" v-else>
-                Выберите вариант ответа снизу
+                {{text}}
             </div>
           </div>
           
@@ -28,12 +28,20 @@ export const QuizGalleryRadio = {
   },
   emit: ["selectItem"],
   computed: {
-    picture() {
-      const img = this.$props.questions?.find(
+    element() {
+      return this.$props.questions?.find(
         (el) => el.id === this.$props.value[0]
-      )?.img;
+      );
+    },
+    picture() {
+      const img = this.element?.img;
       if (!img) return;
       return img;
+    },
+    text() {
+      const text = this.element?.text;
+      if (!text) return "Выберите вариант ответа";
+      return text;
     },
   },
   methods: {

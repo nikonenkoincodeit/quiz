@@ -292,7 +292,7 @@ svg {
 }
 
 .quiz-title {
-  padding: 15px 15px 11px 15px;
+  padding: 15px 40px 11px 15px;
   color: #363636;
   font-size: 18px;
   height: 40px;
@@ -467,6 +467,24 @@ svg {
   align-items: center;
 }
 
+.gallery-box-img {
+  position: relative;
+}
+
+.gallery-box-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 50%;
+}
+
 .gallery-box-img img {
   display: block;
   max-width: 100%;
@@ -481,6 +499,7 @@ svg {
 }
 
 .check {
+  z-index: 2;
   display: none;
   align-items: center;
   justify-content: center;
@@ -505,11 +524,13 @@ svg {
   display: flex;
 }
 
+.checkbox-list,
 .radio-list {
   display: grid;
   gap: 16px;
 }
 
+.checkbox-item,
 .radio-item {
   cursor: pointer;
   padding: 13px 16px;
@@ -520,18 +541,36 @@ svg {
   gap: 16px;
 }
 
+.checkbox-item {
+  padding: 0 16px 0 0;
+}
+
 .radio-item.active {
   border: 1px solid #d34085;
 }
 
+.checkbox-item.active .checkbox-check {
+  background: #d34085;
+}
+
+.checkbox-label {
+  padding: 13px 16px;
+  background: #fff;
+}
+
+.checkbox-check,
 .radio-check {
-  border-radius: 50%;
+  border-radius: 4px;
   min-width: 20px;
   min-height: 20px;
   background: #e6e6e6;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.radio-check {
+  border-radius: 50%;
 }
 
 .radio-item.active .radio-check {
@@ -546,12 +585,35 @@ svg {
   background: #d34085;
 }
 
+.checkbox-text,
 .radio-text {
   margin: 0;
   font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   color: #363636;
   font-size: 16px;
+}
+
+.checkbox-text {
+  padding: 16px 0;
+}
+
+.checkbox-input {
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: -16px;
+  background: #e6e6e6;
+}
+
+.checkbox-icon {
+  display: none;
+}
+
+.checkbox-item.active .checkbox-icon {
+  display: block;
 }
 
 .textarea-question,
@@ -793,13 +855,15 @@ svg {
   height: 100%;
   width: 100%;
   background: rgb(237, 237, 237);
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .gallery-radio-group {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -814,6 +878,71 @@ svg {
   display: block;
   max-width: 100%;
   height: inherit;
+}
+
+/*-------info-box--------*/
+.info-box-subtitle,
+.info-box {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(54, 54, 54);
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+.info-box-subtitle {
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+}
+
+.info-box-list {
+  list-style: none;
+  margin: 12px 0 16px 0;
+  padding-left: 24px;
+}
+
+.info-box-img {
+  margin: 0 0 24px 0;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  border: 1px solid #f0e6c0;
+  width: 200px;
+  font-size: 12px;
+  background-color: #fffaeb;
+  color: rgb(54, 54, 54);
+  text-align: center;
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 6px;
+  position: absolute;
+  line-height: 1.5;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Gilroy-Medium", sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fffaeb transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -873,6 +1002,7 @@ svg {
     border-radius: 0;
   }
   .quiz-title {
+    padding: 15px 15px 11px 15px;
     font-size: 28px;
   }
   .quiz-content {
@@ -899,6 +1029,7 @@ svg {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+  .checkbox-list,
   .radio-list {
     grid-template-columns: repeat(2, 1fr);
   }
