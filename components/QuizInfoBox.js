@@ -9,7 +9,7 @@ export const QuizInfoBox = {
         </li>
     </ul>
     <div class="info-box-img">
-        <img src="../img/skin/umt36gy0ln9bux83t6c9.webp" width="226" alt="img" />
+        <img src="https://nikonenkoincodeit.github.io/quiz/img/skin/umt36gy0ln9bux83t6c9.webp" width="226" alt="img" />
     </div>
   </div>`,
   data() {
