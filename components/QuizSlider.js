@@ -115,8 +115,7 @@ export const QuizSlider = {
         fromPosition = toPosition;
         toPosition = spare;
       }
-      this.moveLabel((fromPosition / rangeDistance) * 100);
-      console.log((fromPosition / rangeDistance) * 100);
+      // this.moveLabel((fromPosition / rangeDistance) * 100);
       controlSlider.style.background = `linear-gradient(
                   to right,
                   ${sliderColor} 0%,

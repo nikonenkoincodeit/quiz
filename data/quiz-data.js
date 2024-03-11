@@ -13,38 +13,39 @@ export const quizKitchen = [
       {
         id: 1,
         text: "ПРЯМАЯ",
-        img: "../img/kitchen/kmnqiuujhhomd6wzjo1c.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/kmnqiuujhhomd6wzjo1c.webp",
       },
       {
         id: 2,
         text: "Г- ОБРАЗНАЯ",
-        img: "../img/kitchen/xw1hn9gy6nv4xz5yqmmo.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/xw1hn9gy6nv4xz5yqmmo.webp",
       },
       {
         id: 3,
         text: "П- ОБРАЗНАЯ",
-        img: "../img/kitchen/ipwxxikfa9n3ea1t98vg.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/ipwxxikfa9n3ea1t98vg.webp",
       },
       {
         id: 4,
         text: "с ОСТРОВКОМ",
-        img: "../img/kitchen/dugq210mv0dmpqr8gxgb.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/dugq210mv0dmpqr8gxgb.webp",
       },
       {
         id: 5,
         text: "(необходимо будет загрузить эскиз)",
         tooltip:
           "Выберите этот пункт, если Ваша форма кухни отличается от представленных",
-        img: "../img/kitchen/m1vs95zmyzch3wc7ympq.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/m1vs95zmyzch3wc7ympq.webp",
       },
       {
         id: 6,
         text: "",
-        img: "../img/kitchen/dcmgd9niphqeibrf0enn.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/dcmgd9niphqeibrf0enn.webp",
       },
     ],
     assistant: {
-      avatar: "../img/q5bxeeetdupgmyvsmdww.webp",
+      avatar:
+        "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
       name: "Анна",
       specialty: "Специалист по кварцу",
       text: "Смотри подсказку→→→ Стоимость сильно варьируется от форм и размеров столешницы. В вариантах представлены стандартные формы столешниц на кухне. Если Ваша форма кухни отличается от стандартной, то выберите картинку с надписью 'Другой вариант'. Нужно будет загрузить эскиз.",
@@ -82,7 +83,8 @@ export const quizKitchen = [
       },
     ],
     assistant: {
-      avatar: "../img/q5bxeeetdupgmyvsmdww.webp",
+      avatar:
+        "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
       name: "Анна",
       specialty: "Специалист по кварцу",
       text: "Смотри подсказку→→→ Обычно столешницу устанавливают, когда на кухне уже сделан ремонт и установлена мебель. На каком этапе сейчас Вы?",
@@ -103,38 +105,39 @@ export const quizKitchen = [
       {
         id: 1,
         text: "Фрезеровка 'мокрый стол'",
-        img: "../img/kitchen/if3rj2vmlpsotjwlmtd6.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/if3rj2vmlpsotjwlmtd6.webp",
         tooltip:
           "Делается, чтобы вода стекала прямо в мойку при сушке посуды. Очень практично.",
       },
       {
         id: 2,
         text: "Декоративная кромка",
-        img: "../img/kitchen/ga2kyi51z90bxa1nc8is.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/ga2kyi51z90bxa1nc8is.webp",
         tooltip: "Облагораживает вид столешницы и придает ей помпезности.",
       },
       {
         id: 3,
         text: "Делает общий вид столешницы не таким строгим.",
-        img: "../img/kitchen/x2tsemvvp2aijpkn4rlv.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/x2tsemvvp2aijpkn4rlv.webp",
         tooltip: "Скгругленная сторона столешницы",
       },
       {
         id: 4,
         text: "Вырез под встроенную технику",
-        img: "../img/kitchen/hv4sbucecxewqpfdptoc.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/hv4sbucecxewqpfdptoc.webp",
         tooltip:
           "Например, под встроенную варочную плиту или посудомоечную машинку.",
       },
       {
         id: 5,
         text: "Пристенный плинтус",
-        img: "../img/kitchen/pjelnipeja2waseknwue.webp",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/pjelnipeja2waseknwue.webp",
         tooltip: "Помогает еще больше подчеркнуть изящность столешницы.",
       },
     ],
     assistant: {
-      avatar: "../img/q5bxeeetdupgmyvsmdww.webp",
+      avatar:
+        "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
       name: "Анна",
       specialty: "Специалист по кварцу",
       text: "Смотри подсказку→→→ Доступны дополнительные опции для столешницы, чтобы подчеркнуть ее красоту и сделать еще практичнее и удобнее.",
@@ -165,11 +168,12 @@ export const quizKitchen = [
         text: "Нет ничего",
         tooltip:
           "В результатах теста будет несколько размеров указанной формы столешницы для примера",
-        next: 3,
+        next: 7,
       },
     ],
     assistant: {
-      avatar: "../img/q5bxeeetdupgmyvsmdww.webp",
+      avatar:
+        "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
       name: "Анна",
       specialty: "Специалист по кварцу",
       text: "Смотри подсказку→→→ При нажатии 'Да', дальше нужно будет загрузить файл с эскизом. Если нажмете 'Нет', то в конце теста в результатах Вам покажут несколько размеров столешницы выбранной формы для примера. При нажатии 'Эскиза нет, но знаю размеры' дальше нужно будет ввести размеры.",
@@ -193,7 +197,8 @@ export const quizKitchen = [
     type: "my-textarea",
     title: "Впишите свои размеры (подсказка справа)",
     assistant: {
-      avatar: "../img/q5bxeeetdupgmyvsmdww.webp",
+      avatar:
+        "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
       name: "Анна",
       specialty: "Специалист по кварцу",
       text: "Смотри подсказку→→→ Впишите свои размеры в формате: Длина 0000мм х 0000мм, Ширина 0000м, толщина 00мм, плинтус 00мм.",
@@ -220,15 +225,63 @@ export const quizKitchen = [
     buttonText: "Последний шаг",
   },
   {
+    id: 7,
+    title: "Без эскиза или размеров мы не сможем продолжить...=(",
+    text: [
+      `Для просчета стоимости, нам нужно от чего-то отталкиваться: 
+      <span class="block">от размеров или эскиза.</span> Без них этого не сделать.`,
+      `НО ВОТ ПРИМЕРЫ цен некоторых форм столешниц
+      (При минимальном наборе опций и при использовании бренда камня с минимальной стоимостью)`,
+      `Прямая: от 400$ с установкой
+      <span class="block">П- образная: от 750$ с установкой</span>
+      <span class="block">Г- образная: от 1100$ с установкой</span>
+      <span class="block">С островком: от 1150$ с установкой</span>`,
+      `РЕКОМЕНДУЕМ ДЕТАЛЬНЕЕ ПОСМОТРЕТЬ ИНФОРМАЦИЮ НА САЙТЕ, ЧТОБЫ ПОНЯТЬ, ПОЧЕМУ У КВАРЦА ТАКАЯ СТОИМОСТЬ И ФАКТОРЫ, КОТОРЫЕ НА НЕЕ СИЛЬНО ВЛИЯЮТ.`,
+      `ЕСЛИ ВЫ ХОТИТЕ переговорить со специалистом, нажимайте на кнопку внизу и выберите, через какой метод с Вами связаться.`,
+      `**ИЛИ если у Вас все-таки есть эскиз или размеры, нажмите "Пройти тест заново" и загрузите его.
+      <span class="block">-----------------↓↓↓↓------</span>`,
+    ],
+    type: "my-info",
+    btnText: "Узнать подробнее",
+    next: 8,
+    prev: 1,
+    value: [],
+    percent: null,
+  },
+  {
     id: 7.1,
     title:
       "Хорошо! Вы загрузили эскиз своей столешницы для примерного расчета.",
-    text: "Теперь жмите ниже на кнопку 'Далее' и Вас направит на страницу выбора метода обратной связи, чтобы сообщить Ваш результат просчета!",
+    text: [
+      "Теперь жмите ниже на кнопку 'Далее' и Вас направит на страницу выбора метода обратной связи, чтобы сообщить Ваш результат просчета!",
+    ],
     type: "my-info",
-    next: 7,
-    prev: 6.1,
+    next: 8,
+    prev: 1,
     value: [],
     percent: null,
+  },
+  {
+    id: 7.2,
+    title: "Хорошо! Вы ввели размеры Вашей столешницы для примерного расчета.",
+    text: [
+      "Теперь жмите ниже на кнопку 'Далее' и Вас направит на страницу выбора метода обратной связи, чтобы сообщить Ваш результат просчета!",
+    ],
+    type: "my-info",
+    next: 8,
+    prev: 1,
+    value: [],
+    percent: null,
+  },
+  {
+    id: 8,
+    type: "choice-of-comm-met",
+    colLeft: true,
+    title: "Отлично, почти готово:",
+    text: "Выберите метод для связи и введите номер",
+    subtitle: "Viber-сообщение или тел. звонок?",
+    description:
+      "Специалист свяжется с Вами, чтобы ответить на вопросы или сообщить результаты просчета.",
   },
 ];
 
@@ -431,6 +484,11 @@ export const quizSkin = [
   {
     id: 9,
     type: "choice-of-comm-met",
+    colLeft: false,
+    title: "Отлично!",
+    text: "МЫ ПОЛУЧИЛИ ВАШИ ОТВЕТЫ",
+    subtitle: "Сообщить результат по Телефону или в Viber?",
+    description: "",
   },
 ];
 
@@ -673,6 +731,11 @@ export const quizShowerRoom = [
   {
     id: 7,
     type: "choice-of-comm-met",
+    colLeft: false,
+    title: "Отлично!",
+    text: "МЫ ПОЛУЧИЛИ ВАШИ ОТВЕТЫ",
+    subtitle: "Сообщить результат по Телефону или в Viber?",
+    description: "",
   },
 ];
 
@@ -904,5 +967,10 @@ export const quizMirrors = [
   {
     id: 7,
     type: "choice-of-comm-met",
+    colLeft: false,
+    title: "Отлично!",
+    text: "МЫ ПОЛУЧИЛИ ВАШИ ОТВЕТЫ",
+    subtitle: "Сообщить результат по Телефону или в Viber?",
+    description: "",
   },
 ];
