@@ -1,6 +1,6 @@
 export const QuizNavbar = {
   template: `<div class="quiz-navbar">
-    <div class="progress-bar">
+    <div class="progress-bar" :class="{'hide-elem': percent === null}">
       <div class="progress-bar-label">Готово: <span>{{percent}}%</span></div>
       <div class="progress-bar-field">
         <span :style="{width: percent + '%'}"></span>
@@ -26,7 +26,7 @@ export const QuizNavbar = {
       default: () => [],
     },
     percent: {
-      type: Number,
+      type: [Number, null],
       default: 0,
     },
     buttonText: {
