@@ -117,9 +117,9 @@ export const quizKitchen = [
       },
       {
         id: 3,
-        text: "Делает общий вид столешницы не таким строгим.",
+        text: "Скгругленная сторона столешницы",
         img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/x2tsemvvp2aijpkn4rlv.webp",
-        tooltip: "Скгругленная сторона столешницы",
+        tooltip: "Делает общий вид столешницы не таким строгим.",
       },
       {
         id: 4,
@@ -133,6 +133,11 @@ export const quizKitchen = [
         text: "Пристенный плинтус",
         img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/pjelnipeja2waseknwue.webp",
         tooltip: "Помогает еще больше подчеркнуть изящность столешницы.",
+      },
+      {
+        id: 6,
+        text: "Ничего из этого, только столешница",
+        img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/empty.jpg",
       },
     ],
     assistant: {
@@ -208,7 +213,7 @@ export const quizKitchen = [
     id: 6.1,
     title: "В какой Бюджет на столешницу нужно вписаться? (в $$)",
     type: "my-slider",
-    next: 7,
+    next: 7.1,
     prev: 5.1,
     value: [],
     percent: null,
@@ -218,7 +223,7 @@ export const quizKitchen = [
     id: 6.2,
     title: "В какой Бюджет на столешницу нужно вписаться? (в $$)",
     type: "my-slider",
-    next: 7,
+    next: 7.2,
     prev: 5.2,
     value: [],
     percent: null,

@@ -1273,6 +1273,9 @@ input[type="range"] {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+  .gallery.сheckbox-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .checkbox-list,
   .radio-list {
     grid-template-columns: repeat(2, 1fr);
