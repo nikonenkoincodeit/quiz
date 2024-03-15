@@ -16,6 +16,9 @@ body {
 
 .quiz-overlay {
   font-family: "Gilroy-Medium", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 999;
@@ -23,6 +26,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.quiz-overlay.show {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .my-info-box,
@@ -106,7 +117,7 @@ body {
   font-weight: 500;
   gap: 10px;
   margin: 0;
-  padding: 22px 16px;
+  padding: 16px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -858,6 +869,10 @@ svg {
   margin: 15px 0;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 /*-------gallery-radio------*/
 .gallery-radio {
   display: grid;
@@ -1247,7 +1262,7 @@ input[type="range"] {
   }
   .quiz-title {
     padding: 15px 15px 11px 15px;
-    font-size: 28px;
+    font-size: 26px;
   }
   .quiz-content {
     padding-bottom: 0;
@@ -1275,6 +1290,7 @@ input[type="range"] {
   }
   .gallery.сheckbox-gallery {
     grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
   }
   .checkbox-list,
   .radio-list {

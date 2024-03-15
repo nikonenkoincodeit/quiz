@@ -1,5 +1,5 @@
 export const QuizCheckboxGallery = {
-  template: `<div class="file-uploader-tag mtb-15">
+  template: `<div class="file-uploader-tag mb-15">
         <span class="circle">&#10004;</span>
         выберите один или несколько</div>
   <div class="gallery сheckbox-gallery">

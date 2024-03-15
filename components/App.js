@@ -1,9 +1,9 @@
-import {
-  quizMirrors,
-  quizShowerRoom,
-  quizSkin,
-  quizKitchen,
-} from "../data/quiz-data.js";
+// import {
+//   quizMirrors,
+//   quizShowerRoom,
+//   quizSkin,
+//   quizKitchen,
+// } from "../data/quiz-data.js";
 import { QuizSidebar } from "./QuizSidebar.js";
 import { QuizNavbar } from "./QuizNavbar.js";
 import { QuizGallery } from "./QuizGallery.js";
@@ -20,8 +20,9 @@ import { QuizSlider } from "./QuizSlider.js";
 import { QuizInfo } from "./QuizInfo.js";
 import { SvgIconClose } from "./SvgIconClose.js";
 
-const app = Vue.createApp({
-  template: `<div class="quiz-overlay">
+export function createQuiz(data) {
+  const appVue = {
+    template: `<div>
     <QuizFinal 
     v-if="isFinish" 
     :title="slideData?.title"
@@ -61,121 +62,124 @@ const app = Vue.createApp({
       :buttonText="slideData?.buttonText"/>
     </div>
 </div>`,
-  components: {
-    QuizSidebar,
-    QuizNavbar,
-    QuizGallery,
-    QuizRadio,
-    QuizInput,
-    QuizFinal,
-    QuizInfo,
-    QuizSlider,
-    QuizTextarea,
-    QuizCheckbox,
-    QuizInfoBox,
-    QuizGalleryRadio,
-    QuizCheckboxGallery,
-    SvgIconClose,
-  },
-  data() {
-    return {
-      step: 1,
-      data: quizKitchen,
-    };
-  },
-  computed: {
-    myComponent() {
-      if (this.slideData.type === "my-textarea") return QuizTextarea;
-      if (this.slideData.type === "my-input") return QuizInput;
-      if (this.slideData.type === "gallery") return QuizGallery;
-      if (this.slideData.type === "radio") return QuizRadio;
-      if (this.slideData.type === "my-load-file") return QuizLoadFile;
-      if (this.slideData.type === "gallery-radio") return QuizGalleryRadio;
-      if (this.slideData.type === "my-checkbox") return QuizCheckbox;
-      if (this.slideData.type === "info-box") return QuizInfoBox;
-      if (this.slideData.type === "my-slider") return QuizSlider;
-      if (this.slideData.type === "checkbox-gallery")
-        return QuizCheckboxGallery;
+    components: {
+      QuizSidebar,
+      QuizNavbar,
+      QuizGallery,
+      QuizRadio,
+      QuizInput,
+      QuizFinal,
+      QuizInfo,
+      QuizSlider,
+      QuizTextarea,
+      QuizCheckbox,
+      QuizInfoBox,
+      QuizGalleryRadio,
+      QuizCheckboxGallery,
+      SvgIconClose,
     },
-    isFinish() {
-      return this.slideData.type === "choice-of-comm-met";
+    data() {
+      return {
+        step: 1,
+        data,
+      };
     },
-    isInfo() {
-      return this.slideData.type === "my-info";
+    computed: {
+      myComponent() {
+        if (this.slideData.type === "my-textarea") return QuizTextarea;
+        if (this.slideData.type === "my-input") return QuizInput;
+        if (this.slideData.type === "gallery") return QuizGallery;
+        if (this.slideData.type === "radio") return QuizRadio;
+        if (this.slideData.type === "my-load-file") return QuizLoadFile;
+        if (this.slideData.type === "gallery-radio") return QuizGalleryRadio;
+        if (this.slideData.type === "my-checkbox") return QuizCheckbox;
+        if (this.slideData.type === "info-box") return QuizInfoBox;
+        if (this.slideData.type === "my-slider") return QuizSlider;
+        if (this.slideData.type === "checkbox-gallery")
+          return QuizCheckboxGallery;
+      },
+      isFinish() {
+        return this.slideData.type === "choice-of-comm-met";
+      },
+      isInfo() {
+        return this.slideData.type === "my-info";
+      },
+      title() {
+        return this.slideData.title;
+      },
+      slideData() {
+        return this.data.find(({ id }) => id === this.step);
+      },
     },
-    title() {
-      return this.slideData.title;
-    },
-    slideData() {
-      return this.data.find(({ id }) => id === this.step);
-    },
-  },
-  methods: {
-    selectItem(type, id) {
-      // console.log(type, id);
-      if (type === "push") {
-        this.slideData.value.push(id);
-      } else if (type === "add") {
-        this.slideData.value[0] = id;
-      } else if (type === "file") {
-        this.slideData.value[0] = [...id];
-      } else if (type === "lot") {
-        this.slideData.value = [...id];
-      }
-      //
-    },
-    next() {
-      if (this.slideData?.next) {
-        this.step = this.slideData.next;
-      } else {
-        this.step = this.slideData?.questions?.find(({ id }) =>
-          this.slideData.value.includes(id)
-        )?.next;
-      }
-    },
-    prev() {
-      this.step = this.slideData.prev;
-    },
-    onSubmit(obj) {
-      const items = [];
-      console.log("data ", this.data);
-      Object.values(this.data).forEach((item) => {
-        const plainObject = { ...item };
-        if (plainObject.value?.length > 0 && plainObject.type !== "info-box") {
-          items.push(plainObject);
+    methods: {
+      selectItem(type, id) {
+        if (type === "push") {
+          this.slideData.value.push(id);
+        } else if (type === "add") {
+          this.slideData.value[0] = id;
+        } else if (type === "file") {
+          this.slideData.value[0] = [...id];
+        } else if (type === "lot") {
+          this.slideData.value = [...id];
         }
-      });
+        //
+      },
+      next() {
+        if (this.slideData?.next) {
+          this.step = this.slideData.next;
+        } else {
+          this.step = this.slideData?.questions?.find(({ id }) =>
+            this.slideData.value.includes(id)
+          )?.next;
+        }
+      },
+      prev() {
+        this.step = this.slideData.prev;
+      },
+      onSubmit(obj) {
+        const items = [];
+        console.log("data ", this.data);
+        Object.values(this.data).forEach((item) => {
+          const plainObject = { ...item };
+          if (
+            plainObject.value?.length > 0 &&
+            plainObject.type !== "info-box"
+          ) {
+            items.push(plainObject);
+          }
+        });
 
-      const data = items.map((el) => {
-        return {
-          title: el.title,
-          type: el.type,
-          questions: el?.questions
-            ? el.questions
-                .filter((item) => el.value.includes(item.id))
-                .map((el) => el.text)
-            : [el.value[0]],
-        };
-      });
-      // console.log(obj);
-      console.log(data);
+        const data = items.map((el) => {
+          return {
+            title: el.title,
+            type: el.type,
+            questions: el?.questions
+              ? el.questions
+                  .filter((item) => el.value.includes(item.id))
+                  .map((el) => el.text)
+              : [el.value[0]],
+          };
+        });
+      },
     },
-  },
-  mounted() {
-    const osInstance = OverlayScrollbarsGlobal.OverlayScrollbars(
-      document.querySelector(".quiz-content"),
-      {
-        scrollbars: {
-          visibility: "auto",
-          autoHide: "never",
-          autoHideDelay: 1300,
-          autoHideSuspend: false,
-          dragScroll: true,
-          pointers: ["mouse", "touch", "pen"],
-        },
-      }
-    );
-  },
-});
+    mounted() {
+      const osInstance = OverlayScrollbarsGlobal.OverlayScrollbars(
+        document.querySelector(".quiz-content"),
+        {
+          scrollbars: {
+            visibility: "auto",
+            autoHide: "never",
+            autoHideDelay: 1300,
+            autoHideSuspend: false,
+            dragScroll: true,
+            pointers: ["mouse", "touch", "pen"],
+          },
+        }
+      );
+    },
+  };
 
-app.mount("#app-quiz");
+  const app = Vue.createApp(appVue);
+  app.mount("#app-quiz");
+  return app;
+}
