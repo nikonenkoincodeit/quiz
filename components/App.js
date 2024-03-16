@@ -1,9 +1,5 @@
-// import {
-//   quizMirrors,
-//   quizShowerRoom,
-//   quizSkin,
-//   quizKitchen,
-// } from "../data/quiz-data.js";
+import { addFiles } from "../js/files.js";
+import { sendData } from "../js/api.js";
 import { QuizSidebar } from "./QuizSidebar.js";
 import { QuizNavbar } from "./QuizNavbar.js";
 import { QuizGallery } from "./QuizGallery.js";
@@ -25,6 +21,7 @@ export function createQuiz(data) {
     template: `<div>
     <QuizFinal 
     v-if="isFinish" 
+    v-modal:phone="phone"
     :title="slideData?.title"
     :text="slideData?.text"
     :description="slideData?.description"
@@ -81,7 +78,9 @@ export function createQuiz(data) {
     data() {
       return {
         step: 1,
-        data,
+        nameQuiz: data.name,
+        data: data.items,
+        phone: "",
       };
     },
     computed: {
@@ -136,9 +135,9 @@ export function createQuiz(data) {
       prev() {
         this.step = this.slideData.prev;
       },
-      onSubmit(obj) {
+      onSubmit({ phone = "", selectMessenger = "" } = {}) {
         const items = [];
-        console.log("data ", this.data);
+        // console.log("obj ", obj);
         Object.values(this.data).forEach((item) => {
           const plainObject = { ...item };
           if (
@@ -160,6 +159,28 @@ export function createQuiz(data) {
               : [el.value[0]],
           };
         });
+
+        const formData = new FormData();
+
+        formData.append("phone", phone);
+        formData.append("selectMessenger", selectMessenger);
+        formData.append("nameQuiz", this.nameQuiz);
+
+        data.forEach((el) => {
+          if (el.type === "my-load-file") {
+            addFiles(formData, el.questions[0]);
+          } else {
+            formData.append("title[]", el.title);
+            formData.append("text[]", el.questions.join(", "));
+          }
+        });
+        // console.log(data);
+        // console.log(Object.fromEntries(formData));
+        sendData(formData)
+          .then((r) => {
+            console.log("r ", r);
+          })
+          .catch((err) => console.error(err.message));
       },
     },
     mounted() {

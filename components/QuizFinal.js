@@ -50,7 +50,7 @@ export const QuizFinal = {
     };
   },
   name: "QuizFinal",
-  emit: ["selectItem", "onSubmit"],
+  emit: ["onSubmit"],
   props: {
     colLeft: {
       type: Boolean,
@@ -68,13 +68,14 @@ export const QuizFinal = {
     clearMessenger() {
       this.selectMessenger = "";
     },
-    onChange() {
-      this.$emit("selectItem", "add", this.value);
-    },
+    // onChange() {
+    //   this.$emit("selectItem", "add", this.value);
+    // },
     handlerOnSubmit() {
-      const number = this.iti.getNumber(intlTelInputUtils.numberFormat.E164);
-      this.phone = number;
-      this.$emit("onSubmit", { number, selectMessenger: this.selectMessenger });
+      const phone = this.iti.getNumber(intlTelInputUtils.numberFormat.E164);
+      console.log("phone ", phone);
+      this.phone = phone;
+      this.$emit("onSubmit", { phone, selectMessenger: this.selectMessenger });
     },
   },
   mounted() {
