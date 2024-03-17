@@ -181,7 +181,8 @@ export function createQuiz(data) {
         sendData(formData)
           .then((r) => {
             console.log("r ", r);
-            location.href = "/quiz/email.html";
+            location.href =
+              "https://nikonenkoincodeit.github.io/quiz/email.html";
           })
           .catch((err) => console.error(err.message));
       },
