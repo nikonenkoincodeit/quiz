@@ -181,7 +181,7 @@ export function createQuiz(data) {
         sendData(formData)
           .then((r) => {
             console.log("r ", r);
-            location.href = "/email.html";
+            location.href = "/quiz/email.html";
           })
           .catch((err) => console.error(err.message));
       },
