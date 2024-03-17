@@ -2,7 +2,7 @@ import { SvgIconClose } from "./SvgIconClose.js";
 export const QuizInfo = {
   template: `<div class="my-info-box">
           <SvgIconClose />
-          <div class="my-info-box-body quiz-content">
+          <div class="my-info-box-body quiz-content" ref="quizContent">
             <div class="my-info-box-container ">
                 <h1 class="my-info-box-title">{{title}}</h1>
                 <p class="my-info-box-text" v-for="t of text" :key="t" v-html="t"></p>
@@ -17,6 +17,11 @@ export const QuizInfo = {
           </div>
         </div>`,
   emit: ["next", "prev"],
+  data() {
+    return {
+      quizContent: null,
+    };
+  },
   components: { SvgIconClose },
   props: {
     title: {
@@ -41,7 +46,7 @@ export const QuizInfo = {
   },
   mounted() {
     const osInstance = OverlayScrollbarsGlobal.OverlayScrollbars(
-      document.querySelector(".quiz-content"),
+      this.$refs.quizContent,
       {
         scrollbars: {
           visibility: "auto",

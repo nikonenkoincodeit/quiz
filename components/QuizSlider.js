@@ -65,7 +65,7 @@ export const QuizSlider = {
         this.$refs.fromSlider,
         this.$refs.toSlider
       );
-      this.$emit("selectItem", "lot", [from, to]);
+      this.$emit("selectItem", "lot", [`${from}-${to}`]);
       this.fillSlider(
         this.$refs.fromSlider,
         this.$refs.toSlider,
@@ -84,7 +84,7 @@ export const QuizSlider = {
         this.$refs.fromSlider,
         this.$refs.toSlider
       );
-      this.$emit("selectItem", "lot", [from, to]);
+      this.$emit("selectItem", "lot", [`${from}-${to}`]);
       this.fillSlider(
         this.$refs.fromSlider,
         this.$refs.toSlider,

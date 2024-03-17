@@ -43,7 +43,7 @@ export function createQuiz(data) {
         <h1 class="quiz-title">{{title}}</h1>
       </div>
       <QuizSidebar v-if="slideData?.assistant" :data="slideData?.assistant"/>
-      <div class="quiz-content">
+      <div class="quiz-content" ref="quizContent">
         <component :is="myComponent" 
         :questions="slideData?.questions" 
         :value="slideData?.value"
@@ -77,7 +77,8 @@ export function createQuiz(data) {
     },
     data() {
       return {
-        step: 7,
+        step: 1,
+        quizContent: null,
         nameQuiz: data.name,
         data: data.items,
         phone: "",
@@ -121,7 +122,6 @@ export function createQuiz(data) {
         } else if (type === "lot") {
           this.slideData.value = [...id];
         }
-        //
       },
       next() {
         if (this.slideData?.next) {
@@ -137,7 +137,7 @@ export function createQuiz(data) {
       },
       onSubmit({ phone = "", selectMessenger = "" } = {}) {
         const items = [];
-        // console.log("obj ", obj);
+
         Object.values(this.data).forEach((item) => {
           const plainObject = { ...item };
           if (
@@ -174,8 +174,10 @@ export function createQuiz(data) {
             formData.append("text[]", el.questions.join(", "));
           }
         });
-        // console.log(data);
+        console.log(data);
         // console.log(Object.fromEntries(formData));
+        // console.log(formData.getAll("title[]"));
+        // console.log(formData.getAll("text[]"));
         sendData(formData)
           .then((r) => {
             console.log("r ", r);
@@ -185,7 +187,7 @@ export function createQuiz(data) {
     },
     mounted() {
       const osInstance = OverlayScrollbarsGlobal.OverlayScrollbars(
-        document.querySelector(".quiz-content"),
+        this.$refs.quizContent,
         {
           scrollbars: {
             visibility: "auto",

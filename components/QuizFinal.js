@@ -24,9 +24,9 @@ export const QuizFinal = {
                 <img :src="'https://nikonenkoincodeit.github.io/quiz/img/'+selectMessenger+'.svg'" :alt="selectMessenger"  width="40"/>
               </div>
               <div class="messengers-label">Введите телефон {{selectMessenger}}</div>
-              <input type="text" id="mobile-number" placeholder="Введите телефон" />
+              <input type="text" id="mobile-number" placeholder="Введите телефон" @input="onInput" ref="input"/>
               <div class="messengers-modal-footer" @click="clearMessenger">Выбрать другой мессенджер</div>
-              <button type="submit" class="lead-form-button" :disabled="!!phone">Готово</button>
+              <button type="submit" class="lead-form-button" :disabled="isDisabled">Готово</button>
             </form>
           <div>
             
@@ -44,11 +44,11 @@ export const QuizFinal = {
   components: { SvgIconClose },
   data() {
     return {
+      isDisabled: true,
       messengers: ["phone", "viber"],
       selectMessenger: "",
       iti: null,
       input: null,
-      phone: "",
     };
   },
   name: "QuizFinal",
@@ -70,16 +70,17 @@ export const QuizFinal = {
     clearMessenger() {
       this.selectMessenger = "";
     },
+    onInput() {
+      const phone = this.iti.getNumber(intlTelInputUtils.numberFormat.E164);
+      this.isDisabled = phone[0] !== "+";
+    },
     handlerOnSubmit() {
       const phone = this.iti.getNumber(intlTelInputUtils.numberFormat.E164);
-      console.log("phone ", phone);
-      this.phone = phone;
       this.$emit("onSubmit", { phone, selectMessenger: this.selectMessenger });
     },
   },
   mounted() {
-    this.input = document.querySelector("#mobile-number");
-    this.iti = intlTelInput(this.input, {
+    this.iti = intlTelInput(this.$refs.input, {
       utilsScript:
         "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/js/utils.js",
       defaultCountry: "auto",

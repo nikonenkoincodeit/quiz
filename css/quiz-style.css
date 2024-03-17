@@ -787,6 +787,7 @@ svg {
   flex-grow: 2;
   overflow-y: auto;
   padding: 0 15px;
+  max-height: fit-content;
 }
 
 .messengers-modal-title {
