@@ -2,6 +2,7 @@ import { SvgIconClose } from "./SvgIconClose.js";
 export const QuizFinal = {
   template: `<div class="final-page" :class="{'left-col': colLeft}">
     <SvgIconClose />
+    <div class="final-page-box">
     <div class="final-page-container">
         <div class="final-page-body">
             <p class="final-page-title">{{title}}</p>
@@ -36,6 +37,7 @@ export const QuizFinal = {
               </span>
               <span class="control-label"><span>Я соглашаюсь на <a href="https://www.marquiz.ru/agreement" target="_blank">обработку персональных данных</a> согласно <a href="https://www.marquiz.ru/policy" target="_blank">политике конфиденциальности</a></span></span></label>
             </div>
+          </div>
         </div>
     </div>
   </div>`,
@@ -68,9 +70,6 @@ export const QuizFinal = {
     clearMessenger() {
       this.selectMessenger = "";
     },
-    // onChange() {
-    //   this.$emit("selectItem", "add", this.value);
-    // },
     handlerOnSubmit() {
       const phone = this.iti.getNumber(intlTelInputUtils.numberFormat.E164);
       console.log("phone ", phone);

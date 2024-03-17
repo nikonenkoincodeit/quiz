@@ -1,5 +1,7 @@
+const BASE_URL = "https://www.favorit-glass-catalog.com/";
+
 export function sendData(myFormData) {
-  return fetch("http://save/index.php", {
+  return fetch(BASE_URL + "/php/quiz.php", {
     method: "POST",
     body: myFormData,
   }).then((response) => response.text());
