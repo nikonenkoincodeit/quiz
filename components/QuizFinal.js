@@ -71,8 +71,7 @@ export const QuizFinal = {
       this.selectMessenger = "";
     },
     onInput() {
-      const phone = this.iti.getNumber(intlTelInputUtils.numberFormat.E164);
-      this.isDisabled = phone[0] !== "+";
+      this.isDisabled = !this.iti.isValidNumberPrecise();
     },
     handlerOnSubmit() {
       const phone = this.iti.getNumber(intlTelInputUtils.numberFormat.E164);
@@ -86,6 +85,7 @@ export const QuizFinal = {
       defaultCountry: "auto",
       preferredCountries: ["ua"],
       showSelectedDialCode: true,
+      autoPlaceholder: "aggressive",
     });
   },
 };
