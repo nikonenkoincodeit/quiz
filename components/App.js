@@ -178,13 +178,13 @@ export function createQuiz(data) {
         // console.log(Object.fromEntries(formData));
         // console.log(formData.getAll("title[]"));
         // console.log(formData.getAll("text[]"));
-        // sendData(formData)
-        //   .then((r) => {
-        //     console.log("r ", r);
-        //     location.href =
-        //       "https://nikonenkoincodeit.github.io/quiz/email.html";
-        //   })
-        //   .catch((err) => console.error(err.message));
+        sendData(formData)
+          .then((r) => {
+            console.log("r ", r);
+            location.href =
+              "https://nikonenkoincodeit.github.io/quiz/email.html";
+          })
+          .catch((err) => console.error(err.message));
       },
     },
     mounted() {
