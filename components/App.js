@@ -77,7 +77,7 @@ export function createQuiz(data) {
     },
     data() {
       return {
-        step: 7,
+        step: 1,
         quizContent: null,
         nameQuiz: data.name,
         data: data.items,
