@@ -15,39 +15,39 @@ export const quizKitchen = {
         {
           id: 1,
           text: "ПРЯМАЯ",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/kmnqiuujhhomd6wzjo1c.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/kmnqiuujhhomd6wzjo1c.webp",
         },
         {
           id: 2,
           text: "Г- ОБРАЗНАЯ",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/xw1hn9gy6nv4xz5yqmmo.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/xw1hn9gy6nv4xz5yqmmo.webp",
         },
         {
           id: 3,
           text: "П- ОБРАЗНАЯ",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/ipwxxikfa9n3ea1t98vg.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/ipwxxikfa9n3ea1t98vg.webp",
         },
         {
           id: 4,
           text: "с ОСТРОВКОМ",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/dugq210mv0dmpqr8gxgb.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/dugq210mv0dmpqr8gxgb.webp",
         },
         {
           id: 5,
           text: "(необходимо будет загрузить эскиз)",
           tooltip:
             "Выберите этот пункт, если Ваша форма кухни отличается от представленных",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/m1vs95zmyzch3wc7ympq.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/m1vs95zmyzch3wc7ympq.webp",
         },
         {
           id: 6,
           text: "",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/dcmgd9niphqeibrf0enn.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/dcmgd9niphqeibrf0enn.webp",
         },
       ],
       assistant: {
         avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
+          "https://favorit-glass-catalog.com/quiz/img/q5bxeeetdupgmyvsmdww.webp",
         name: "Анна",
         specialty: "Специалист по кварцу",
         text: "Смотри подсказку→→→ Стоимость сильно варьируется от форм и размеров столешницы. В вариантах представлены стандартные формы столешниц на кухне. Если Ваша форма кухни отличается от стандартной, то выберите картинку с надписью 'Другой вариант'. Нужно будет загрузить эскиз.",
@@ -86,7 +86,7 @@ export const quizKitchen = {
       ],
       assistant: {
         avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
+          "https://favorit-glass-catalog.com/quiz/img/q5bxeeetdupgmyvsmdww.webp",
         name: "Анна",
         specialty: "Специалист по кварцу",
         text: "Смотри подсказку→→→ Обычно столешницу устанавливают, когда на кухне уже сделан ремонт и установлена мебель. На каком этапе сейчас Вы?",
@@ -107,44 +107,44 @@ export const quizKitchen = {
         {
           id: 1,
           text: "Фрезеровка 'мокрый стол'",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/if3rj2vmlpsotjwlmtd6.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/if3rj2vmlpsotjwlmtd6.webp",
           tooltip:
             "Делается, чтобы вода стекала прямо в мойку при сушке посуды. Очень практично.",
         },
         {
           id: 2,
           text: "Декоративная кромка",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/ga2kyi51z90bxa1nc8is.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/ga2kyi51z90bxa1nc8is.webp",
           tooltip: "Облагораживает вид столешницы и придает ей помпезности.",
         },
         {
           id: 3,
           text: "Скгругленная сторона столешницы",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/x2tsemvvp2aijpkn4rlv.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/x2tsemvvp2aijpkn4rlv.webp",
           tooltip: "Делает общий вид столешницы не таким строгим.",
         },
         {
           id: 4,
           text: "Вырез под встроенную технику",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/hv4sbucecxewqpfdptoc.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/hv4sbucecxewqpfdptoc.webp",
           tooltip:
             "Например, под встроенную варочную плиту или посудомоечную машинку.",
         },
         {
           id: 5,
           text: "Пристенный плинтус",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/pjelnipeja2waseknwue.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/pjelnipeja2waseknwue.webp",
           tooltip: "Помогает еще больше подчеркнуть изящность столешницы.",
         },
         {
           id: 6,
           text: "Ничего из этого, только столешница",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/kitchen/empty.jpg",
+          img: "https://favorit-glass-catalog.com/quiz/img/kitchen/empty.jpg",
         },
       ],
       assistant: {
         avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
+          "https://favorit-glass-catalog.com/quiz/img/q5bxeeetdupgmyvsmdww.webp",
         name: "Анна",
         specialty: "Специалист по кварцу",
         text: "Смотри подсказку→→→ Доступны дополнительные опции для столешницы, чтобы подчеркнуть ее красоту и сделать еще практичнее и удобнее.",
@@ -180,7 +180,7 @@ export const quizKitchen = {
       ],
       assistant: {
         avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
+          "https://favorit-glass-catalog.com/quiz/img/q5bxeeetdupgmyvsmdww.webp",
         name: "Анна",
         specialty: "Специалист по кварцу",
         text: "Смотри подсказку→→→ При нажатии 'Да', дальше нужно будет загрузить файл с эскизом. Если нажмете 'Нет', то в конце теста в результатах Вам покажут несколько размеров столешницы выбранной формы для примера. При нажатии 'Эскиза нет, но знаю размеры' дальше нужно будет ввести размеры.",
@@ -205,7 +205,7 @@ export const quizKitchen = {
       title: "Впишите свои размеры (подсказка справа)",
       assistant: {
         avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/q5bxeeetdupgmyvsmdww.webp",
+          "https://favorit-glass-catalog.com/quiz/img/q5bxeeetdupgmyvsmdww.webp",
         name: "Анна",
         specialty: "Специалист по кварцу",
         text: "Смотри подсказку→→→ Впишите свои размеры в формате: Длина 0000мм х 0000мм, Ширина 0000м, толщина 00мм, плинтус 00мм.",
@@ -329,20 +329,19 @@ export const quizSkin = {
         {
           id: 1,
           text: "Ультрафиолетовая печать прямо на стекло (Рекомендуем)",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/skin/u9kppta6wqb9hf7jci6f.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/skin/u9kppta6wqb9hf7jci6f.webp",
           tooltip: "Стандарт отрасли. Более насыщенные цвета при печати.",
         },
         {
           id: 2,
           text: "Латексную на пленку позади стекла",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/skin/ctxev1caoiil1n7wxd1f.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/skin/ctxev1caoiil1n7wxd1f.webp",
           tooltip:
             "Вариант с меньшей стоимостью, но риском деформации пленки от жара у плиты.",
         },
       ],
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по Скинали",
         text: "Смотри подсказку→→→ Смотри подробнее про качества методов печати в разделе 'Наше качество' в пункте 'Печатаем прямо на стекло'. УФ- печать более надежная, более насыщенная, и чуть выше в ценовой категории. Латексная печать менее надежна и чуть менее насыщенная, но ниже в ценовой категории",
@@ -360,21 +359,20 @@ export const quizSkin = {
         {
           id: 1,
           text: "С повышенной ударостойкостью (осколки не опасны для человека",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/skin/k6u1qjct4mvh0tqwm5vo.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/skin/k6u1qjct4mvh0tqwm5vo.webp",
           tooltip:
             "Устойчиво и к ударам, и к жару. В случае треска, рассыпается а безопасные мелкие кусочки",
         },
         {
           id: 2,
           text: "Обычное (Опасные режущие осколки при разбитии)",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/skin/yk849bmdnqpglvskukb8.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/skin/yk849bmdnqpglvskukb8.webp",
           tooltip:
             "Риск треснуть от жара у плиты. При разбитии, разлетается на большие опасные куски",
         },
       ],
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по Скинали",
         text: "Смотри подсказку→→→ При установке на кухню рекомендуем все-таки выбирать Ударопрочное каленое стекло. Как с точки зрения безопасности, так и с точки зрения того, чтобы исключить вероятность, что фартук треснет от жара у плиты. А то придется заного заказывать......",
@@ -392,12 +390,12 @@ export const quizSkin = {
         {
           id: 1,
           text: "Однотонный цвет",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/skin/nmwx3f6ss8carwrlehfh.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/skin/nmwx3f6ss8carwrlehfh.webp",
         },
         {
           id: 2,
           text: "Картинка из каталога",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/skin/m5npgz50ncya5owsqymh.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/skin/m5npgz50ncya5owsqymh.webp",
         },
         {
           id: 3,
@@ -411,8 +409,7 @@ export const quizSkin = {
         },
       ],
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по Скинали",
         text: "Смотри подсказку→→→ Какие варианты будете рассматривать для своего фартука?",
@@ -479,8 +476,7 @@ export const quizSkin = {
         },
       ],
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по Скинали",
         text: "Смотри подсказку→→→ Выберите все подходящие варианты или напишите свой в поле.",
@@ -510,7 +506,7 @@ export const quizSkin = {
 };
 
 export const quizShowerRoom = {
-  name: "",
+  name: "Квиз по Душевым",
   items: [
     {
       id: 1,
@@ -524,32 +520,32 @@ export const quizShowerRoom = {
         {
           id: 1,
           text: "Угловая",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/qkwl9bpqnjnlty0whylo.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/qkwl9bpqnjnlty0whylo.webp",
         },
         {
           id: 2,
           text: "Трапеция ( углы 135°)",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/higkvavzmvfhbgpmleyv.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/higkvavzmvfhbgpmleyv.webp",
         },
         {
           id: 3,
           text: "П-образная",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/aofxe4fmjnag3vb5rfhu.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/aofxe4fmjnag3vb5rfhu.webp",
         },
         {
           id: 4,
           text: "В нишу",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/af9k0ujrrhckrqhmhoxq.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/af9k0ujrrhckrqhmhoxq.webp",
         },
         {
           id: 5,
           text: "Перегородка",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/xgda3c4vbyyeigniqvjl.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/xgda3c4vbyyeigniqvjl.webp",
         },
         {
           id: 6,
           text: "Шторка в ванную",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/bsu85kulh3vnibauhnzz.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/bsu85kulh3vnibauhnzz.webp",
         },
       ],
     },
@@ -565,42 +561,41 @@ export const quizShowerRoom = {
         {
           id: 1,
           text: "Обычное стекло (Зеленоватый оттенок)",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/c7dt5djs02tggknk4aya.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/c7dt5djs02tggknk4aya.webp",
         },
         {
           id: 2,
           text: "Осветленное Диамант ( слегка голубоватый оттенок)",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/pfq8ipvtpryv5chmjyrq.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/pfq8ipvtpryv5chmjyrq.webp",
         },
         {
           id: 3,
           text: "Матовое",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/kzv86x4mni8ozqytd2n4.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/kzv86x4mni8ozqytd2n4.webp",
         },
         {
           id: 4,
           text: "С пескоструем",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/eqpqbtqlysnnzrbfkdri.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/eqpqbtqlysnnzrbfkdri.webp",
         },
         {
           id: 5,
           text: "С цветным рисунком",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/z0bt2s3yv43ir6qtdwlu.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/z0bt2s3yv43ir6qtdwlu.webp",
         },
         {
           id: 6,
           text: "С тонированным стеклом",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/shower-room/l09noekfytcb9nu4ioxu.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/shower-room/l09noekfytcb9nu4ioxu.webp",
         },
         {
           id: 7,
           text: "Еще не знаю",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/grey.jpg",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/grey.jpg",
         },
       ],
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по душевым",
         text: "Душевая может быть главным объектом внимания в ванной комнате, если стильно ее оформить.",
@@ -650,8 +645,7 @@ export const quizShowerRoom = {
       title:
         "Если есть, пишите тут комментарий или, уточнения, пожелания, ссылку на картинку",
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по душевым",
         text: "Например, особые пожелания или примечания. Можете также написать, что для Вас может быть важнее всего в процессе исполнения заказа.",
@@ -667,8 +661,7 @@ export const quizShowerRoom = {
       title:
         "Если есть, пишите тут комментарий или, уточнения, пожелания, ссылку на картинку",
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по душевым",
         text: "Например, особые пожелания или примечания. Можете также написать, что для Вас может быть важнее всего в процессе исполнения заказа.",
@@ -684,8 +677,7 @@ export const quizShowerRoom = {
       title:
         "Если есть, пишите тут комментарий или, уточнения, пожелания, ссылку на картинку",
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "Специалист по душевым",
         text: "Например, особые пожелания или примечания. Можете также написать, что для Вас может быть важнее всего в процессе исполнения заказа.",
@@ -778,57 +770,56 @@ export const quizMirrors = {
         {
           id: 1,
           text: "Просто зеркало- без подсветки и граней",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/synxpdsqel7l27vvx3hj.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/synxpdsqel7l27vvx3hj.webp",
         },
         {
           id: 2,
           text: "Зеркальная плитка",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/iuta0ofcfga5wapjwgoz.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/iuta0ofcfga5wapjwgoz.webp",
         },
         {
           id: 3,
           text: "Зеркальное панно",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/p1pkloi0rpylwcyzhd9u.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/p1pkloi0rpylwcyzhd9u.webp",
         },
         {
           id: 4,
           text: "С фацетом",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/ahuxlvu57kxlbxbcrno5.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/ahuxlvu57kxlbxbcrno5.webp",
         },
         {
           id: 5,
           text: "С алмазной гравировкой",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/qmm6n9uzxrnx7dhtqcsq.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/qmm6n9uzxrnx7dhtqcsq.webp",
         },
         {
           id: 6,
           text: "с витражем CRI",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/ki5gxrbjnompgm1kh2cu.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/ki5gxrbjnompgm1kh2cu.webp",
         },
         {
           id: 7,
           text: "С пескоструем",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/bo0ff6ydxxn3bptcwlzf.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/bo0ff6ydxxn3bptcwlzf.webp",
         },
         {
           id: 8,
           text: "С подсветкой",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/gvim6u3ht9imxjncmnvh.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/gvim6u3ht9imxjncmnvh.webp",
         },
         {
           id: 9,
           text: "Зеркало для шкафа-купе",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/mxlrxr8ylshyb2cryjcc.webp",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/mxlrxr8ylshyb2cryjcc.webp",
         },
         {
           id: 10,
           text: "Не могу определиться",
-          img: "https://nikonenkoincodeit.github.io/quiz/img/mirrors/grey.jpg",
+          img: "https://favorit-glass-catalog.com/quiz/img/mirrors/grey.jpg",
         },
       ],
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "специалист по зеркалам",
         text: "Смотри подсказку→→→ Если не понимаете в чем разница, но просто выберите последний пункт 'Не могу определиться' и менеджер поможет Вам и разъяснит все, что нужно.",
@@ -859,8 +850,7 @@ export const quizMirrors = {
         },
       ],
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "специалист по зеркалам",
         text: "Смотри подсказку→→→ Если да, то предложим загрузить Ваш файл или фото в следующем шаге. Либо можете отправить нам фотографию чертежей в Viber.",
@@ -894,8 +884,7 @@ export const quizMirrors = {
       title:
         "Напишите тут комментарий или размеры, уточнения, пожелания, ссылку на картинку",
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "специалист по зеркалам",
         text: "Смотри подсказку→→→ Впишите дополнительную информацию. Например, что еще нам стоит учесть или укажите, что для Вас важнее всего в случае заказа (скорость, качество, точность, под ключ, доставка, установка, цена, сложные изделия)",
@@ -911,8 +900,7 @@ export const quizMirrors = {
       title:
         "Напишите тут комментарий или размеры, уточнения, пожелания, ссылку на картинку",
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "специалист по зеркалам",
         text: "Смотри подсказку→→→ Впишите дополнительную информацию. Например, что еще нам стоит учесть или укажите, что для Вас важнее всего в случае заказа (скорость, качество, точность, под ключ, доставка, установка, цена, сложные изделия)",
@@ -928,8 +916,7 @@ export const quizMirrors = {
       title:
         "Напишите тут комментарий или размеры, уточнения, пожелания, ссылку на картинку",
       assistant: {
-        avatar:
-          "https://nikonenkoincodeit.github.io/quiz/img/mirrors/daria.webp",
+        avatar: "https://favorit-glass-catalog.com/quiz/img/mirrors/daria.webp",
         name: "Дарья",
         specialty: "специалист по зеркалам",
         text: "Смотри подсказку→→→ Впишите дополнительную информацию. Например, что еще нам стоит учесть или укажите, что для Вас важнее всего в случае заказа (скорость, качество, точность, под ключ, доставка, установка, цена, сложные изделия)",

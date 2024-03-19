@@ -31,6 +31,10 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .quiz-overlay.show {
   opacity: 1;
   pointer-events: all;
@@ -1292,7 +1296,8 @@ input[type="range"] {
   }
   .gallery.сheckbox-gallery {
     grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
+    column-gap: 35px;
+    row-gap: 10px;
   }
   .checkbox-list,
   .radio-list {

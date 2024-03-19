@@ -32,6 +32,6 @@ kitchenBtn.addEventListener("click", () => showQuiz(quizKitchen));
 quizOverlay.addEventListener("click", ({ target }) => {
   if (!target.closest(".icon-x")) return;
   quizOverlay.classList.remove("show");
-  app.unmount();
+  app?.unmount();
   app = null;
 });

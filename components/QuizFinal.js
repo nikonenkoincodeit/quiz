@@ -14,14 +14,14 @@ export const QuizFinal = {
             <h2 class="messengers-title">{{subtitle}}</h2>
             <div class="messengers-list">
               <div class="messengers-item" v-for="messenger of messengers" :key="messenger" @click="getMessenger(messenger)">
-                <img :src="'https://nikonenkoincodeit.github.io/quiz/img/'+messenger+'.svg'" alt="viber" width="32"/>
+                <img :src="'https://favorit-glass-catalog.com/quiz/img/'+messenger+'.svg'" alt="viber" width="32"/>
                 <div class="messengers-name">{{messenger}}</div>
               </div>
             </div>
           </div>
           <form class="form" :class="{show: selectMessenger}" @submit.prevent="handlerOnSubmit">
               <div class="messengers-modal-title">
-                <img :src="'https://nikonenkoincodeit.github.io/quiz/img/'+selectMessenger+'.svg'" :alt="selectMessenger"  width="40"/>
+                <img :src="'https://favorit-glass-catalog.com/quiz/img/'+selectMessenger+'.svg'" :alt="selectMessenger"  width="40"/>
               </div>
               <div class="messengers-label">Введите телефон {{selectMessenger}}</div>
               <input type="text" id="mobile-number" placeholder="Введите телефон" @input="onInput" ref="input"/>
