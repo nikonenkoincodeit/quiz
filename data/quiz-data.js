@@ -1,4 +1,4 @@
-export const quizKitchen = {
+const quizKitchen = {
   name: "Квиз по столешницам из кварца",
   items: [
     {
@@ -294,7 +294,7 @@ export const quizKitchen = {
   ],
 };
 
-export const quizSkin = {
+const quizSkin = {
   name: "Квиз по Скинали",
   items: [
     {
@@ -505,7 +505,7 @@ export const quizSkin = {
   ],
 };
 
-export const quizShowerRoom = {
+const quizShowerRoom = {
   name: "Квиз по Душевым",
   items: [
     {
@@ -755,7 +755,7 @@ export const quizShowerRoom = {
   ],
 };
 
-export const quizMirrors = {
+const quizMirrors = {
   name: "Квиз по зеркалам",
   items: [
     {

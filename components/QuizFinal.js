@@ -89,3 +89,21 @@ export const QuizFinal = {
     });
   },
 };
+
+function f1(a, b) {
+  return a + b;
+}
+
+function f2(d, s) {
+  return d / s + 10 - 2;
+}
+
+function init() {
+  const res1 = f1(5, 10);
+  f2(res1, 10);
+}
+
+function init2() {
+  const res1 = f2(5, 10);
+  f1(res1, 10);
+}
